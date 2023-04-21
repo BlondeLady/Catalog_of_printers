@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
-namespace Kursovaya_printer__forms_
+namespace Catalog_of_printers
 {
     [Serializable]
+     
     class Printer
     {
         int id;

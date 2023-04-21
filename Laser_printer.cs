@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace Kursovaya_printer__forms_
+namespace Catalog_of_printers
 {
     [Serializable]
     [XmlInclude(typeof(Printer))]
     class Laser_printer : Printer
     {
-
+        public Printer Printer { get; set; }
 
         string Color { get; set; }
         public override bool Equals(object obj)
